@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:miakplanou_admin/components/background.dart';
 
-class SignIn extends StatefulWidget {
-  const SignIn({super.key, required String title});
+class SignIn extends StatelessWidget {
+  const SignIn({super.key});
 
-  @override
-  State<SignIn> createState() => _SignInState();
-}
-
-class _SignInState extends State<SignIn> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Background(
+        child: Text("")
+    );
   }
 }

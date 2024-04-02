@@ -7,7 +7,7 @@ class MiakplanouAdmin extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
-      home: const SignIn(title: 'TODO'),
+      home: const SignIn(),
     );
   }
 }
