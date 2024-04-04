@@ -62,7 +62,7 @@ class _SignUpState extends State<SignUp> {
               Row(
                 children: [
                   Text(
-                    "Login",
+                    "Register",
                     style: GoogleFonts.roboto(fontSize: 30, fontWeight: FontWeight.bold),
                   ),
                 ],
