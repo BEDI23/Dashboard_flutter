@@ -18,12 +18,12 @@ class ApiService {
       final response = await http.post(url, body: data);
 
       if (response.statusCode == 201) {
-        print('User registered successfully');
+        print('enregistrement de l utilisateur reussie ');
       } else {
-        print('Failed to register user instance: ${response.statusCode}');
+        print('enregistrement de l utilisateur na pas reussie : ${response.statusCode}');
       }
     } catch (e) {
-      print('Failed to register user: $e');
+      print(' echec de l enregistrement de l utilisateur : $e');
     }
   }
 }

@@ -3,7 +3,6 @@ import 'package:miakplanou_admin/components/background.dart';
 import 'package:miakplanou_admin/constants/colors.dart';
 import 'package:miakplanou_admin/screens/home/Dashbaord.dart';
 import 'package:miakplanou_admin/screens/login/SingUp.dart';
-import 'package:miakplanou_admin/services/api.dart';
 import 'package:miakplanou_admin/widgets/custom_text.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -20,7 +19,6 @@ class _SignInState extends State<SignIn> {
   final TextEditingController _passwordController = TextEditingController();
   String? _emailError;
   String? _passwordError;
-  final ApiService _apiService = ApiService();
 
 
   @override
@@ -41,10 +39,6 @@ class _SignInState extends State<SignIn> {
     });
 
     if (_emailError == null && _passwordError == null) {
-      await _apiService.user(
-        email: _emailController.text,
-        password: _passwordController.text,
-      );
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => const Home()),
